@@ -1,5 +1,7 @@
 package kohgylw.kiftd.server.pojo;
 
+import lombok.Data;
+
 /**
  * 
  * <h2>上传凭证证书</h2>
@@ -7,6 +9,7 @@ package kohgylw.kiftd.server.pojo;
  * @author 青阳龙野(kohgylw)
  * @version 1.0
  */
+@Data
 public class UploadKeyCertificate {
 	
 	private int term;//有效次数

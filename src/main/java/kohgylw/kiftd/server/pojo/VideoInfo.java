@@ -1,6 +1,7 @@
 package kohgylw.kiftd.server.pojo;
 
 import kohgylw.kiftd.server.model.Node;
+import lombok.Data;
 
 /**
  * 
@@ -9,6 +10,7 @@ import kohgylw.kiftd.server.model.Node;
  * @author 青阳龙野(kohgylw)
  * @version 1.0
  */
+@Data
 public class VideoInfo extends Node{
 	
 	public VideoInfo(Node n) {
@@ -22,13 +24,5 @@ public class VideoInfo extends Node{
 	}
 	
 	private String needEncode;
-
-	public String getNeedEncode() {
-		return needEncode;
-	}
-
-	public void setNeedEncode(String needEncode) {
-		this.needEncode = needEncode;
-	}
 	
 }

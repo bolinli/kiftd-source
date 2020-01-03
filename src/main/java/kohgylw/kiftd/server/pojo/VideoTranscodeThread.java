@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.UUID;
 
+import lombok.Data;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import kohgylw.kiftd.printer.Printer;
@@ -25,6 +26,7 @@ import ws.schild.jave.MultimediaObject;
  * @author 青阳龙野(kohgylw)
  * @version 1.0
  */
+@Data
 public class VideoTranscodeThread {
 
 	private String md5;
@@ -61,18 +63,6 @@ public class VideoTranscodeThread {
 		t.start();
 	}
 
-	public String getMd5() {
-		return md5;
-	}
-
-	public String getProgress() {
-		return progress;
-	}
-
-	public String getOutputFileName() {
-		return outputFileName;
-	}
-	
 	/**
 	 * 
 	 * <h2>终止当前转码过程</h2>

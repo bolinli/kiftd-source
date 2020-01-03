@@ -1,5 +1,7 @@
 package kohgylw.kiftd.server.pojo;
 
+import lombok.Data;
+
 /**
  * 
  * <h2>注册信息封装类</h2>
@@ -7,28 +9,11 @@ package kohgylw.kiftd.server.pojo;
  * @author 青阳龙野(kohgylw)
  * @version 1.0
  */
+@Data
 public class SignUpInfoPojo {
 	
 	private String account;
 	private String pwd;
 	private String time;
-	public String getAccount() {
-		return account;
-	}
-	public void setAccount(String account) {
-		this.account = account;
-	}
-	public String getPwd() {
-		return pwd;
-	}
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
-	}
-	public String getTime() {
-		return time;
-	}
-	public void setTime(String time) {
-		this.time = time;
-	}
 
 }

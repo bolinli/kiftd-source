@@ -1,5 +1,8 @@
 package kohgylw.kiftd.util.file_system_manager.pojo;
 
+import lombok.Data;
+
+@Data
 public class Folder extends kohgylw.kiftd.server.model.Folder{
 	
 	@Override

@@ -4,6 +4,7 @@ import java.util.List;
 
 import kohgylw.kiftd.server.model.Folder;
 import kohgylw.kiftd.server.model.Node;
+import lombok.Data;
 
 /**
  * 
@@ -12,21 +13,10 @@ import kohgylw.kiftd.server.model.Node;
  * @author 青阳龙野(kohgylw)
  * @version 1.0
  */
+@Data
 public class RemainingFolderView {
 	
 	private List<Folder> folderList;
 	private List<Node> fileList;
-	
-	public List<Folder> getFolderList() {
-		return folderList;
-	}
-	public void setFolderList(List<Folder> folderList) {
-		this.folderList = folderList;
-	}
-	public List<Node> getFileList() {
-		return fileList;
-	}
-	public void setFileList(List<Node> fileList) {
-		this.fileList = fileList;
-	}
+
 }

@@ -1,5 +1,7 @@
 package kohgylw.kiftd.server.pojo;
 
+import lombok.Data;
+
 /**
  * 
  * <h2>上传文件夹时，“保留两者”操作使用新文件夹名的响应信息封装</h2>
@@ -12,21 +14,9 @@ package kohgylw.kiftd.server.pojo;
  * @author 青阳龙野(kohgylw)
  * @version 1.0
  */
+@Data
 public class CreateNewFolderByNameRespons {
 	
 	private String result;
 	private String newName;
-	public String getResult() {
-		return result;
-	}
-	public void setResult(String result) {
-		this.result = result;
-	}
-	public String getNewName() {
-		return newName;
-	}
-	public void setNewName(String newName) {
-		this.newName = newName;
-	}
-
 }
